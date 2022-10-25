@@ -1,0 +1,117 @@
+@font-face{
+  font-family: "Mazzard.new";
+  src: url(../../../First_Website/fonts/mazzard-web-font/MazzardM-Light.woff2);
+  font-style: normal;
+  font-display: swap;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(161, 191, 217);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mazzard.new';
+  }
+.disappear{
+  display: none;
+}
+.body{
+  width: 40%;
+  height: auto;
+  background-color: red;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+button:hover,input[type=button]:hover{
+  cursor: pointer;
+}
+.header h1,#display h1{
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+input[type=text]{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#input[type=text]{
+  transition: ease-in-out, width, .35s ease-in-out;
+}
+#input[type=text]:focus{
+  width: 80%;
+}
+.but{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 15px;
+}
+
+#nextBtn, #add{
+  background-color: rgb(34, 34, 34);
+  border: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+}
+#add{margin-left: 10px;}
+#outer {
+    display: none;  
+}
+
+#display h1{
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+#inputarea{
+  width: 100%;
+  align-items: center;
+  /* height: 40px; */
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+.list{
+  width: 75%;
+  height: 40px;
+  border: 2px solid rgb(78, 77, 77);
+  background-color: #fff;
+  margin-bottom: 4px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 12%;
+}
+#listitem{
+  font-weight: 800px;
+  font-size: 17px;
+}
+.delete,.edit,.complete{
+  border: none;
+  cursor:pointer;
+}
+.con{
+  width: 15%;
+  justify-content: space-between;
+  display: flex;
+}
